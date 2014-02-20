@@ -1,0 +1,9 @@
+C:\Users\brandan.NSSM\AppData\Local\Temporary Projects\LIBTEST\bin\Debug\LIBTEST.exe
+C:\Users\brandan.NSSM\AppData\Local\Temporary Projects\LIBTEST\bin\Debug\LIBTEST.pdb
+C:\Users\brandan.NSSM\AppData\Local\Temporary Projects\LIBTEST\bin\Debug\LIBTEST.xml
+C:\Users\brandan.NSSM\AppData\Local\Temporary Projects\LIBTEST\obj\x86\Debug\LIBTEST.Form1.resources
+C:\Users\brandan.NSSM\AppData\Local\Temporary Projects\LIBTEST\obj\x86\Debug\LIBTEST.Resources.resources
+C:\Users\brandan.NSSM\AppData\Local\Temporary Projects\LIBTEST\obj\x86\Debug\LIBTEST.vbproj.GenerateResource.Cache
+C:\Users\brandan.NSSM\AppData\Local\Temporary Projects\LIBTEST\obj\x86\Debug\LIBTEST.exe
+C:\Users\brandan.NSSM\AppData\Local\Temporary Projects\LIBTEST\obj\x86\Debug\LIBTEST.xml
+C:\Users\brandan.NSSM\AppData\Local\Temporary Projects\LIBTEST\obj\x86\Debug\LIBTEST.pdb

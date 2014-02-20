@@ -1,0 +1,14 @@
+C:\Users\brandan.NSSM\Dropbox\Brandan\Programming\Projects\Java\Northshore Library Two\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Release\LIBTEST.Form1.resources
+C:\Users\brandan.NSSM\Dropbox\Brandan\Programming\Projects\Java\Northshore Library Two\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Release\LIBTEST.Resources.resources
+C:\Users\brandan.NSSM\Dropbox\Brandan\Programming\Projects\Java\Northshore Library Two\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Release\VB_LibraryGUI.vbproj.GenerateResource.Cache
+C:\Users\brandan.NSSM\Dropbox\Brandan\Programming\Projects\Java\Northshore Library Two\VB_LibraryGUI\VB_LibraryGUI\bin\Release\Northshore Library.exe.manifest
+C:\Users\brandan.NSSM\Dropbox\Brandan\Programming\Projects\Java\Northshore Library Two\VB_LibraryGUI\VB_LibraryGUI\bin\Release\Northshore Library.application
+C:\Users\brandan.NSSM\Dropbox\Brandan\Programming\Projects\Java\Northshore Library Two\VB_LibraryGUI\VB_LibraryGUI\bin\Release\Northshore Library.exe
+C:\Users\brandan.NSSM\Dropbox\Brandan\Programming\Projects\Java\Northshore Library Two\VB_LibraryGUI\VB_LibraryGUI\bin\Release\Northshore Library.pdb
+C:\Users\brandan.NSSM\Dropbox\Brandan\Programming\Projects\Java\Northshore Library Two\VB_LibraryGUI\VB_LibraryGUI\bin\Release\Northshore Library.xml
+C:\Users\brandan.NSSM\Dropbox\Brandan\Programming\Projects\Java\Northshore Library Two\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Release\Northshore Library.exe.manifest
+C:\Users\brandan.NSSM\Dropbox\Brandan\Programming\Projects\Java\Northshore Library Two\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Release\Northshore Library.application
+C:\Users\brandan.NSSM\Dropbox\Brandan\Programming\Projects\Java\Northshore Library Two\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Release\Northshore Library.exe
+C:\Users\brandan.NSSM\Dropbox\Brandan\Programming\Projects\Java\Northshore Library Two\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Release\Northshore Library.xml
+C:\Users\brandan.NSSM\Dropbox\Brandan\Programming\Projects\Java\Northshore Library Two\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Release\Northshore Library.pdb
+C:\Users\brandan.NSSM\Dropbox\Brandan\Programming\Projects\Java\Northshore Library Two\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Release\LIBTEST.Form2.resources

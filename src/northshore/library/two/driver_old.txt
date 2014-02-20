@@ -1,0 +1,134 @@
+//Old Driver Code
+
+    public void OverwriteEntryText(EntryItem item){
+        EntryItem[] database = getDatabaseText();
+        for(int i = 0; i < database.length; i++){
+            if(database[i].getEntry() == item.getEntry()){
+                database[i] = item;
+                saveDatabaseText(database);
+                return;
+            }
+        }
+    }
+	
+	public void overwriteEntryBin(EntryItem item) throws ClassNotFoundException{
+        EntryItem[] databasein = getDatabase();
+        for(int i = 0; i < databasein.length; i++){
+            if(databasein[i].getEntry() == item.getEntry()){
+                ObjectOutputStream out;
+                try{
+                    out = new ObjectOutputStream(new FileOutputStream(databaseFilePath));
+                    out.writeObject(databasein);
+                    out.close();
+                    addItemBackup(databasein);
+                }
+                catch(IOException e){
+                    System.out.println("Error: overwriteEntry");
+                }
+            }
+        }
+    }
+    
+    public void addItemBin(EntryItem item) throws FileNotFoundException, ClassNotFoundException{
+        EntryItem[] oldDatabase = getDatabase();
+        EntryItem[] newDatabase = new EntryItem[oldDatabase.length + 1];
+        for(int i = 0; i < oldDatabase.length; i++){
+            newDatabase[i] = oldDatabase[i];
+            if(oldDatabase[i].getEntry() == item.getEntry()){
+                overwriteEntry(item);
+                return;
+            }
+        }
+            
+        newDatabase[oldDatabase.length] = item;
+        
+        ObjectOutputStream out;
+        try{
+            out = new ObjectOutputStream(new FileOutputStream(databaseFilePath));
+            out.writeObject(newDatabase);
+            out.close();
+            addItemBackup(newDatabase);
+        }
+        catch(IOException e){
+            System.out.println("Error: Save Database");
+        }
+    }
+    
+    public void addItemBackupBin(EntryItem[] item) throws FileNotFoundException{
+        PrintWriter fileOutput;
+        try
+        {
+            fileOutput = new PrintWriter(new FileOutputStream(databaseBackupFilePath));
+            for(EntryItem e : item)
+                fileOutput.println(e.toString());
+            fileOutput.close();
+        }
+        catch(IOException e){System.out.println("Error: write");}
+    }
+    
+    public EntryItem[] getDatabaseBin() throws ClassNotFoundException{
+        ObjectInputStream in;
+        File inFile = new File(databaseFilePath);
+        Object temp = null;
+        EntryItem[] loadedArray = null;
+        try{
+            in = new ObjectInputStream(new FileInputStream(inFile));
+            temp = in.readObject();
+            loadedArray = (EntryItem[]) temp;
+            in.close();
+            return loadedArray;
+        }
+        catch(IOException e){
+            System.out.println("Error: Load Database");
+            
+        }
+        
+        ObjectOutputStream out;
+        try{
+            out = new ObjectOutputStream(new FileOutputStream(databaseFilePath));
+            out.writeObject(database);
+            out.close();
+        }
+        catch(IOException e){
+            System.out.println("Error: getDatabase/Save Database");
+        }
+        return database;
+    }
+	
+	    public EntryItem[] getDatabase(){
+        
+        Scanner fileInputScanner;
+        EntryItem[] database = null;
+        int count = 0;
+        try
+        {
+            fileInputScanner = new Scanner(new File(databaseBackupFilePath));
+            while(fileInputScanner.hasNextLine())
+            {
+                String a = fileInputScanner.nextLine();
+                count++;
+            }
+            fileInputScanner.close();
+        }
+        catch(IOException e){
+            System.out.println("Error: readTextFile");
+        }
+        database = new EntryItem[count];
+        count = 0;
+        try
+        {
+            fileInputScanner = new Scanner(new File(databaseBackupFilePath));
+            while(fileInputScanner.hasNextLine())
+            {
+                database[count] = new EntryItem(fileInputScanner.nextLine());
+                count++;
+            }
+            fileInputScanner.close();
+        }
+        catch(IOException e){
+            System.out.println("Error: readTextFile");
+        }
+        return database;
+    }
+	
+	
