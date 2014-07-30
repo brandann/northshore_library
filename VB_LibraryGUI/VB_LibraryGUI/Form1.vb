@@ -17,6 +17,7 @@ Public Class Form1
         exe = exe + TextBox1.Text
         IO.Directory.SetCurrentDirectory("P:\Northshore Time Sheet\Tools\LIBRARY\")
         Shell(exe)
+        'Button3.PerformClick()
     End Sub
 
     Private Sub TextBox1_KeyDown(sender As System.Object, e As System.Windows.Forms.KeyEventArgs) Handles TextBox1.KeyDown
@@ -92,5 +93,13 @@ Public Class Form1
             setList(ComboBox1.SelectedItem.ToString + ".txt")
         End If
 
+    End Sub
+
+    Private Sub Label1_Click(sender As System.Object, e As System.EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub Button3_Click(sender As System.Object, e As System.EventArgs) Handles Button3.Click
+        TextBox1.Text = ""
     End Sub
 End Class
