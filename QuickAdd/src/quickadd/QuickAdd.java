@@ -86,7 +86,7 @@ public class QuickAdd {
         }
         
         JFileChooser chooser = new JFileChooser();
-        chooser.setCurrentDirectory(new File("C:\\Desktop\\Library Add Files\\1.dwg"));
+        chooser.setCurrentDirectory(new File("C:\\Desktop\\Library Add Files\\01.dwg"));
         final FileNameExtensionFilter pngFilter = new FileNameExtensionFilter("JPEG Image (*.jpg)", "jpg");
         chooser.addChoosableFileFilter(pngFilter);
         chooser.setFileFilter(pngFilter);
@@ -108,7 +108,7 @@ public class QuickAdd {
         }
         
         JFileChooser chooser = new JFileChooser();
-        chooser.setCurrentDirectory(new File("C:\\Desktop\\Library Add Files\\1.dwg"));
+        chooser.setCurrentDirectory(new File("C:\\Desktop\\Library Add Files\\01.dwg"));
         final FileNameExtensionFilter pdfFilter = new FileNameExtensionFilter("PDF document (*.pdf)", "pdf");
         chooser.addChoosableFileFilter(pdfFilter);
         chooser.setFileFilter(pdfFilter);
@@ -129,7 +129,7 @@ public class QuickAdd {
         }
         
         JFileChooser chooser = new JFileChooser();
-        chooser.setCurrentDirectory(new File("C:\\Desktop\\Library Add Files\\1.dwg"));
+        chooser.setCurrentDirectory(new File("C:\\Desktop\\Library Add Files\\01.dwg"));
         final FileNameExtensionFilter dwgFilter = new FileNameExtensionFilter("Autocad Drawing (*.dwg)", "dwg");
         chooser.addChoosableFileFilter(dwgFilter);
         chooser.setFileFilter(dwgFilter);

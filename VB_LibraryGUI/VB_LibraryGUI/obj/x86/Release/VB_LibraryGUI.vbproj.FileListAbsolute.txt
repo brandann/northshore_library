@@ -27,3 +27,18 @@ C:\Users\brandan.NSSM\Dropbox\Brandan\Projects\Java\Northshore Library Two\VB_Li
 C:\Users\brandan.NSSM\Dropbox\Brandan\Projects\Java\Northshore Library Two\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Release\Northshore Library.exe
 C:\Users\brandan.NSSM\Dropbox\Brandan\Projects\Java\Northshore Library Two\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Release\Northshore Library.xml
 C:\Users\brandan.NSSM\Dropbox\Brandan\Projects\Java\Northshore Library Two\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Release\Northshore Library.pdb
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Release\Northshore Library.exe
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Release\Northshore Library.xml
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Release\Northshore Library.pdb
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\bin\Release\Northshore Library.exe.manifest
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\bin\Release\Northshore Library.application
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\bin\Release\Northshore Library.exe
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\bin\Release\Northshore Library.pdb
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\bin\Release\Northshore Library.xml
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Release\LIBTEST.Form1.resources
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Release\LIBTEST.Form2.resources
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Release\LIBTEST.Form3.resources
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Release\LIBTEST.Resources.resources
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Release\VB_LibraryGUI.vbproj.GenerateResource.Cache
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Release\Northshore Library.exe.manifest
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Release\Northshore Library.application

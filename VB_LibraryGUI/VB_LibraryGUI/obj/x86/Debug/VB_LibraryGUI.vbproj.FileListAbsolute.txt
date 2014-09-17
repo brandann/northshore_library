@@ -28,3 +28,18 @@ C:\Users\brandan.NSSM\Dropbox\Brandan\Projects\Java\Northshore Library Two\VB_Li
 C:\Users\brandan.NSSM\Dropbox\Brandan\Projects\Java\Northshore Library Two\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Debug\VB_LibraryGUI.vbproj.GenerateResource.Cache
 C:\Users\brandan.NSSM\Dropbox\Brandan\Projects\Java\Northshore Library Two\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Debug\Northshore Library.exe.manifest
 C:\Users\brandan.NSSM\Dropbox\Brandan\Projects\Java\Northshore Library Two\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Debug\Northshore Library.application
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\bin\Debug\Northshore Library.exe.manifest
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\bin\Debug\Northshore Library.application
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\bin\Debug\Northshore Library.exe
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\bin\Debug\Northshore Library.pdb
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\bin\Debug\Northshore Library.xml
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Debug\LIBTEST.Form1.resources
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Debug\LIBTEST.Form2.resources
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Debug\LIBTEST.Form3.resources
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Debug\LIBTEST.Resources.resources
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Debug\VB_LibraryGUI.vbproj.GenerateResource.Cache
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Debug\Northshore Library.exe.manifest
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Debug\Northshore Library.application
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Debug\Northshore Library.exe
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Debug\Northshore Library.xml
+C:\Desktop\git\northshore_library\VB_LibraryGUI\VB_LibraryGUI\obj\x86\Debug\Northshore Library.pdb
