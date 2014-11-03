@@ -15,7 +15,7 @@ Public Class Form1
     Private Sub search()
         Dim exe As String = "java -jar Northshore_Library_Two.jar -s "
         exe = exe + TextSearchBox.Text
-        IO.Directory.SetCurrentDirectory("P:\Northshore Time Sheet\Tools\LIBRARY\")
+        IO.Directory.SetCurrentDirectory("P:\NORTHSHORE\Northshore Time Sheet\Tools\LIBRARY\")
         Shell(exe)
         'Button3.PerformClick()
     End Sub
@@ -27,7 +27,7 @@ Public Class Form1
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(sender As System.Object, e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles TextSearchHelpLabel.LinkClicked
-        Process.Start("P:\Northshore Time Sheet\Tools\LIBRARY\Help.html")
+        Process.Start("P:\NORTHSHORE\Northshore Time Sheet\Tools\LIBRARY\Help.html")
     End Sub
 
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
@@ -37,7 +37,7 @@ Public Class Form1
         TextSearchBox.Select()
 
         'set the path to the ref file
-        Dim path As String = "P:\Northshore Time Sheet\Tools\LIBRARY\" & "database.dat"
+        Dim path As String = "P:\NORTHSHORE\Northshore Time Sheet\Tools\LIBRARY\" & "database.dat"
 
         'typical vars
         Dim linein As String
@@ -85,7 +85,7 @@ Public Class Form1
 
     Private Sub getlength()
         Dim count As Integer
-        Using sr As New StreamReader("P:\Northshore Time Sheet\Tools\LIBRARY\database.dat")
+        Using sr As New StreamReader("P:\NORTHSHORE\Northshore Time Sheet\Tools\LIBRARY\database.dat")
             Do While sr.Peek <> -1
                 sr.ReadLine()
                 count += 1
@@ -101,11 +101,10 @@ Public Class Form1
         AdvancedTagList.Items.Clear()
 
         'set the path to the ref file
-        Dim path As String = "P:\Northshore Time Sheet\Tools\LIBRARY\" & file
+        Dim path As String = "P:\NORTHSHORE\Northshore Time Sheet\Tools\LIBRARY\" & file
 
         'read file and set listbox
         Using sr As New StreamReader(path)
-            Dim line As String
             Do While sr.Peek <> -1
                 AdvancedTagList.Items.Add(sr.ReadLine())
             Loop
@@ -193,7 +192,7 @@ Public Class Form1
         Next
 
         exe = exe + txt
-        IO.Directory.SetCurrentDirectory("P:\Northshore Time Sheet\Tools\LIBRARY\")
+        IO.Directory.SetCurrentDirectory("P:\NORTHSHORE\Northshore Time Sheet\Tools\LIBRARY\")
         Shell(exe)
     End Sub
 
@@ -210,7 +209,7 @@ Public Class Form1
     Private Sub search(ByRef term)
         Dim exe As String = "java -jar Northshore_Library_Two.jar -s "
         exe = exe + term
-        IO.Directory.SetCurrentDirectory("P:\Northshore Time Sheet\Tools\LIBRARY\")
+        IO.Directory.SetCurrentDirectory("P:\NORTHSHORE\Northshore Time Sheet\Tools\LIBRARY\")
         Shell(exe)
     End Sub
 

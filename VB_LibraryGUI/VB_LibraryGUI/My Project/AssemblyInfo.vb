@@ -9,11 +9,11 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("LIBTEST")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
+<Assembly: AssemblyDescription("Northshore Library")> 
+<Assembly: AssemblyCompany("Northshore Sheet Metal")> 
 <Assembly: AssemblyProduct("LIBTEST")> 
 <Assembly: AssemblyCopyright("Copyright ©  2013")> 
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyTrademark("Brandan Haertel")> 
 
 <Assembly: ComVisible(False)>
 

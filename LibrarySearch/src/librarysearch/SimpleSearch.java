@@ -20,7 +20,7 @@ import java.util.Scanner;
 public class SimpleSearch {
     
     ArrayList<Detail> details;
-    private final String databasePath = "data\\database.dat";
+    private final String databasePath = "database.dat";
     
     public SimpleSearch() throws FileNotFoundException{
         if(!loadDetails()){
@@ -54,7 +54,7 @@ public class SimpleSearch {
         Detail[] detailArray = new Detail[DetailList.size()];
         detailArray = DetailList.toArray(detailArray);
         Random r = new Random();
-        HtmlOut h = new HtmlOut(detailArray, "data\\search\\LS-" + r.nextLong() + ".html");
+        HtmlOut h = new HtmlOut(detailArray, "search\\LS-" + r.nextLong() + ".html");
     }
     
     private boolean loadDetails() throws FileNotFoundException{
