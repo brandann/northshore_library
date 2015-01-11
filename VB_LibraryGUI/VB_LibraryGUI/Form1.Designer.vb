@@ -30,6 +30,7 @@ Partial Class Form1
         Me.TextSearchButton = New System.Windows.Forms.Button()
         Me.GlobalExitButton = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.AdvancedExcludeButton = New System.Windows.Forms.Button()
         Me.AdvancedIncludeRemoveButton = New System.Windows.Forms.Button()
         Me.AdvancedExcludeList = New System.Windows.Forms.ListBox()
@@ -44,18 +45,23 @@ Partial Class Form1
         Me.Label4 = New System.Windows.Forms.Label()
         Me.AdvancedTagCatCombo = New System.Windows.Forms.ComboBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.TextSearchResults = New System.Windows.Forms.ListBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.AdvancedClearButton = New System.Windows.Forms.Button()
+        Me.AdvancedSearchButton = New System.Windows.Forms.Button()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.AdvancedTagAddButton = New System.Windows.Forms.Button()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.TextSearchResults = New System.Windows.Forms.ListBox()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.Label14 = New System.Windows.Forms.Label()
         Me.JobNumberOpenButton = New System.Windows.Forms.Button()
         Me.JobNumberList = New System.Windows.Forms.ListBox()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.JobNameOpenButton = New System.Windows.Forms.Button()
         Me.JobNameList = New System.Windows.Forms.ListBox()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.NorthshoreStandardSystemOpenButton = New System.Windows.Forms.Button()
@@ -63,23 +69,17 @@ Partial Class Form1
         Me.NorthshoreStandardDetailList = New System.Windows.Forms.ListBox()
         Me.NorthshoreStandardSystemList = New System.Windows.Forms.ListBox()
         Me.TabPage6 = New System.Windows.Forms.TabPage()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.NorthcladStandardSystemOpenButton = New System.Windows.Forms.Button()
         Me.NorthcladStandardDetailOpenList = New System.Windows.Forms.Button()
         Me.NorthcladStandardDetailList = New System.Windows.Forms.ListBox()
         Me.NorthcladStandardSystemList = New System.Windows.Forms.ListBox()
-        Me.AdvancedClearButton = New System.Windows.Forms.Button()
-        Me.AdvancedSearchButton = New System.Windows.Forms.Button()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
-        Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
+        Me.TabPage1.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.TabPage4.SuspendLayout()
         Me.TabPage5.SuspendLayout()
@@ -151,6 +151,17 @@ Partial Class Form1
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(393, 392)
         Me.Panel1.TabIndex = 5
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.Color.Maroon
+        Me.Label15.Location = New System.Drawing.Point(5, 342)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(202, 20)
+        Me.Label15.TabIndex = 111
+        Me.Label15.Text = "Exclusion Coming Soon!"
         '
         'AdvancedExcludeButton
         '
@@ -300,6 +311,62 @@ Partial Class Form1
         Me.TabControl1.Size = New System.Drawing.Size(748, 489)
         Me.TabControl1.TabIndex = 10
         '
+        'TabPage2
+        '
+        Me.TabPage2.BackColor = System.Drawing.SystemColors.Control
+        Me.TabPage2.Controls.Add(Me.AdvancedClearButton)
+        Me.TabPage2.Controls.Add(Me.AdvancedSearchButton)
+        Me.TabPage2.Controls.Add(Me.Label10)
+        Me.TabPage2.Controls.Add(Me.AdvancedTagAddButton)
+        Me.TabPage2.Controls.Add(Me.AdvancedTagList)
+        Me.TabPage2.Controls.Add(Me.AdvancedTagCatCombo)
+        Me.TabPage2.Controls.Add(Me.Panel1)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(740, 463)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "Advanced Search"
+        '
+        'AdvancedClearButton
+        '
+        Me.AdvancedClearButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AdvancedClearButton.Location = New System.Drawing.Point(53, 429)
+        Me.AdvancedClearButton.Name = "AdvancedClearButton"
+        Me.AdvancedClearButton.Size = New System.Drawing.Size(141, 28)
+        Me.AdvancedClearButton.TabIndex = 113
+        Me.AdvancedClearButton.Text = "Clear"
+        Me.AdvancedClearButton.UseVisualStyleBackColor = True
+        '
+        'AdvancedSearchButton
+        '
+        Me.AdvancedSearchButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AdvancedSearchButton.Location = New System.Drawing.Point(200, 429)
+        Me.AdvancedSearchButton.Name = "AdvancedSearchButton"
+        Me.AdvancedSearchButton.Size = New System.Drawing.Size(141, 28)
+        Me.AdvancedSearchButton.TabIndex = 112
+        Me.AdvancedSearchButton.Text = "Search"
+        Me.AdvancedSearchButton.UseVisualStyleBackColor = True
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(411, 434)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(150, 13)
+        Me.Label10.TabIndex = 111
+        Me.Label10.Text = "Double Click To Add Tag"
+        '
+        'AdvancedTagAddButton
+        '
+        Me.AdvancedTagAddButton.Location = New System.Drawing.Point(659, 434)
+        Me.AdvancedTagAddButton.Name = "AdvancedTagAddButton"
+        Me.AdvancedTagAddButton.Size = New System.Drawing.Size(75, 23)
+        Me.AdvancedTagAddButton.TabIndex = 10
+        Me.AdvancedTagAddButton.Text = "Add"
+        Me.AdvancedTagAddButton.UseVisualStyleBackColor = True
+        '
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.SystemColors.Control
@@ -326,42 +393,6 @@ Partial Class Form1
         Me.TextSearchResults.TabIndex = 101
         Me.TextSearchResults.Visible = False
         '
-        'TabPage2
-        '
-        Me.TabPage2.BackColor = System.Drawing.SystemColors.Control
-        Me.TabPage2.Controls.Add(Me.AdvancedClearButton)
-        Me.TabPage2.Controls.Add(Me.AdvancedSearchButton)
-        Me.TabPage2.Controls.Add(Me.Label10)
-        Me.TabPage2.Controls.Add(Me.AdvancedTagAddButton)
-        Me.TabPage2.Controls.Add(Me.AdvancedTagList)
-        Me.TabPage2.Controls.Add(Me.AdvancedTagCatCombo)
-        Me.TabPage2.Controls.Add(Me.Panel1)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(740, 463)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "Advanced Search"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(411, 434)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(150, 13)
-        Me.Label10.TabIndex = 111
-        Me.Label10.Text = "Double Click To Add Tag"
-        '
-        'AdvancedTagAddButton
-        '
-        Me.AdvancedTagAddButton.Location = New System.Drawing.Point(659, 434)
-        Me.AdvancedTagAddButton.Name = "AdvancedTagAddButton"
-        Me.AdvancedTagAddButton.Size = New System.Drawing.Size(75, 23)
-        Me.AdvancedTagAddButton.TabIndex = 10
-        Me.AdvancedTagAddButton.Text = "Add"
-        Me.AdvancedTagAddButton.UseVisualStyleBackColor = True
-        '
         'TabPage3
         '
         Me.TabPage3.BackColor = System.Drawing.SystemColors.Control
@@ -373,6 +404,15 @@ Partial Class Form1
         Me.TabPage3.Size = New System.Drawing.Size(740, 463)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Job Number"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(117, 36)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(177, 13)
+        Me.Label14.TabIndex = 2
+        Me.Label14.Text = "Select Job Number To Open Details"
         '
         'JobNumberOpenButton
         '
@@ -402,6 +442,15 @@ Partial Class Form1
         Me.TabPage4.Size = New System.Drawing.Size(740, 463)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Job Name"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(117, 36)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(168, 13)
+        Me.Label13.TabIndex = 4
+        Me.Label13.Text = "Select Job Name To Open Details"
         '
         'JobNameOpenButton
         '
@@ -435,6 +484,17 @@ Partial Class Form1
         Me.TabPage5.Size = New System.Drawing.Size(740, 463)
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "Northshore Standards"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.Maroon
+        Me.Label11.Location = New System.Drawing.Point(69, 24)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(121, 20)
+        Me.Label11.TabIndex = 109
+        Me.Label11.Text = "Coming Soon!"
         '
         'Label7
         '
@@ -510,6 +570,17 @@ Partial Class Form1
         Me.TabPage6.TabIndex = 5
         Me.TabPage6.Text = "Northclad Standards"
         '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.Maroon
+        Me.Label12.Location = New System.Drawing.Point(69, 24)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(121, 20)
+        Me.Label12.TabIndex = 115
+        Me.Label12.Text = "Coming Soon!"
+        '
         'Label8
         '
         Me.Label8.AutoSize = True
@@ -568,77 +639,6 @@ Partial Class Form1
         Me.NorthcladStandardSystemList.Size = New System.Drawing.Size(296, 316)
         Me.NorthcladStandardSystemList.TabIndex = 109
         '
-        'AdvancedClearButton
-        '
-        Me.AdvancedClearButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AdvancedClearButton.Location = New System.Drawing.Point(53, 429)
-        Me.AdvancedClearButton.Name = "AdvancedClearButton"
-        Me.AdvancedClearButton.Size = New System.Drawing.Size(141, 28)
-        Me.AdvancedClearButton.TabIndex = 113
-        Me.AdvancedClearButton.Text = "Clear"
-        Me.AdvancedClearButton.UseVisualStyleBackColor = True
-        '
-        'AdvancedSearchButton
-        '
-        Me.AdvancedSearchButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AdvancedSearchButton.Location = New System.Drawing.Point(200, 429)
-        Me.AdvancedSearchButton.Name = "AdvancedSearchButton"
-        Me.AdvancedSearchButton.Size = New System.Drawing.Size(141, 28)
-        Me.AdvancedSearchButton.TabIndex = 112
-        Me.AdvancedSearchButton.Text = "Search"
-        Me.AdvancedSearchButton.UseVisualStyleBackColor = True
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.ForeColor = System.Drawing.Color.Maroon
-        Me.Label11.Location = New System.Drawing.Point(69, 24)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(121, 20)
-        Me.Label11.TabIndex = 109
-        Me.Label11.Text = "Coming Soon!"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.Maroon
-        Me.Label12.Location = New System.Drawing.Point(69, 24)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(121, 20)
-        Me.Label12.TabIndex = 115
-        Me.Label12.Text = "Coming Soon!"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(117, 36)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(168, 13)
-        Me.Label13.TabIndex = 4
-        Me.Label13.Text = "Select Job Name To Open Details"
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(117, 36)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(177, 13)
-        Me.Label14.TabIndex = 2
-        Me.Label14.Text = "Select Job Number To Open Details"
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.ForeColor = System.Drawing.Color.Maroon
-        Me.Label15.Location = New System.Drawing.Point(5, 342)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(202, 20)
-        Me.Label15.TabIndex = 111
-        Me.Label15.Text = "Exclusion Coming Soon!"
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -654,14 +654,14 @@ Partial Class Form1
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Northshore Library Search - V-NSM-DC-01"
+        Me.Text = "Northshore Library Search - V151101"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.TabControl1.ResumeLayout(False)
-        Me.TabPage1.ResumeLayout(False)
-        Me.TabPage1.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
+        Me.TabPage1.ResumeLayout(False)
+        Me.TabPage1.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
         Me.TabPage4.ResumeLayout(False)
