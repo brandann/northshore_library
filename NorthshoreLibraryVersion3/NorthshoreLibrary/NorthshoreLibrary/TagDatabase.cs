@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NorthshoreLibrary
 {
-    class TagDatabase : Database
+    public class TagDatabase : Database
     {
 
         public List<string> GetTagCategories()

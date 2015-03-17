@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NorthshoreLibrary
 {
-    class DetailDatabase : Database
+    public class DetailDatabase : Database
     {
         public List<string> GetJobNames()
         {
@@ -14,9 +14,9 @@ namespace NorthshoreLibrary
             for (int i = 0; i < _databaseItems.Count; i++ )
             {
                 Detail det = _databaseItems[i] as Detail;
-                if(!results.Contains(det.GetName()))
+                if(!results.Contains(det.Name))
                 {
-                    results.Add(det.GetName());
+                    results.Add(det.Name);
                 }
             }
             return results;
@@ -28,9 +28,9 @@ namespace NorthshoreLibrary
             for (int i = 0; i < _databaseItems.Count; i++)
             {
                 Detail det = _databaseItems[i] as Detail;
-                if (!results.Contains(det.GetNumber()))
+                if (!results.Contains(det.Number))
                 {
-                    results.Add(det.GetNumber());
+                    results.Add(det.Number);
                 }
             }
             return results;

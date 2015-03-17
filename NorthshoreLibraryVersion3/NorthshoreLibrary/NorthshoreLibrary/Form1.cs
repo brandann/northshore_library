@@ -13,12 +13,15 @@ namespace NorthshoreLibrary
 {
     public partial class Form1 : Form
     {
+        private LibraryManager _libraryManager;
+
+        #region SEARCH
         private const string TAG_TERM = "Tags";
         private const string NAME_TERM = "Job Name";
         private const string NUMBER_TERM = "Job Number";
         private const string RESULT_LABEL = " Details Found";
-
-        private LibraryManager _libraryManager;
+        //private const string dir = "C:\\Users\\brandan\\Documents\\northshore_library\\NorthshoreLibraryVersion3\\";
+        private const string dir = "";
 
         public Form1()
         {
@@ -28,6 +31,7 @@ namespace NorthshoreLibrary
         private void Form1_Load(object sender, EventArgs e)
         {
             _libraryManager = new LibraryManager();
+            //DatabaseConvert dc = new DatabaseConvert();
             ResetForm();
         }
 
@@ -54,7 +58,7 @@ namespace NorthshoreLibrary
             SearchTerm2.Enabled = false;
             SearchBox.Clear();
             SearchResultList.Items.Clear();
-            SearchTermList.Items.Clear();
+            //SearchTermList.Items.Clear();
 
             if (selectedItem == TAG_TERM)
             {
@@ -92,7 +96,7 @@ namespace NorthshoreLibrary
             string selectedItem = SearchTerm2.SelectedItem as string;
             SearchBox.Clear();
             SearchResultList.Items.Clear();
-            SearchTermList.Items.Clear();
+            //SearchTermList.Items.Clear();
 
             if (term1selecteditem == TAG_TERM)
             {
@@ -149,14 +153,110 @@ namespace NorthshoreLibrary
 
         private void Search()
         {
-            List<string> searchterms = new List<string>();
             List<string> searchResults = new List<string>();
+            List<string> searchterms = new List<string>();
             for (int i = 0; i < SearchTermList.Items.Count; i++ )
             {
                 searchterms.Add(SearchTermList.Items[i] as string);
             }
             searchResults = _libraryManager.Search(searchterms);
             SearchResultLabel.Text = searchResults.Count + RESULT_LABEL;
+            SetResults(searchResults);
+        }
+        #endregion
+
+        #region RESULT
+        List<Detail> _details;
+
+        private void SetResults(List<string> results)
+        {
+            ResetResults();
+
+            // get details from string list
+            _details = new List<Detail>();
+            results.Sort();
+            for (int i = results.Count - 1; i >= 0 ; i--)
+            {
+                Detail det = new Detail(results[i]);
+                _details.Add(det);
+
+                // set detail list
+                ResultList.Items.Add(det.Number + " - " + det.Description);
+            }
+        }
+
+        private void ResetResults()
+        {
+            ResultList.Items.Clear();
+            ResultPicture.Image = null;
+        }
+        #endregion
+
+        private void ResultPrev_Click(object sender, EventArgs e)
+        {
+            if(ResultList.SelectedIndex > 0)
+            {
+                ResultList.SelectedIndex -= 1;
+            }
+        }
+
+        private void ResultNext_Click(object sender, EventArgs e)
+        {
+            if(ResultList.SelectedIndex < (ResultList.Items.Count - 1))
+            {
+                ResultList.SelectedIndex += 1;
+            }
+        }
+
+        private void ResultList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadDetail(ResultList.SelectedIndex);
+        }
+
+        private void LoadDetail(int index)
+        {
+            if(index == -1)
+            {
+                ResetResults();
+            }
+            if (index < 0 || index >= _details.Count)
+            {
+                ResetResults();
+            }
+            else
+            {
+                Detail det =_details[index];
+                string pdffile = det.Pdf;
+                string jpgfile = det.Jpg;
+                string dwgfile = det.Dwg;
+
+                Console.WriteLine(dir + jpgfile);
+                ResultPicture.Image = new Bitmap(dir + jpgfile);
+                
+            }
+        }
+
+        private void ClearTermsButton_Click(object sender, EventArgs e)
+        {
+            SearchTermList.Items.Clear();
+            Search();
+        }
+
+        private void ResultEdit_Click(object sender, EventArgs e)
+        {
+            if(ResultList.SelectedIndex != -1)
+            {
+                Form2 form = new Form2();
+                form.Show();
+                form.SetLibrary(this, _libraryManager, _details[ResultList.SelectedIndex]);
+            }
+        }
+
+        private void AddDetailButton_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();
+            form.Show();
+            form.SetLibrary(this, _libraryManager);
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NorthshoreLibrary
 {
-    class Database
+    public class Database
     {
         protected List<DatabaseItem> _databaseItems;
         public Database() { _databaseItems = new List<DatabaseItem>(); }

@@ -1,0 +1,9 @@
+C:\Users\brandan\Documents\northshore_library\NorthshoreLibraryVersion3\NorthshoreLibrary\NorthshoreLibrary\bin\Release\NorthshoreLibrary.exe.config
+C:\Users\brandan\Documents\northshore_library\NorthshoreLibraryVersion3\NorthshoreLibrary\NorthshoreLibrary\bin\Release\NorthshoreLibrary.exe
+C:\Users\brandan\Documents\northshore_library\NorthshoreLibraryVersion3\NorthshoreLibrary\NorthshoreLibrary\bin\Release\NorthshoreLibrary.pdb
+C:\Users\brandan\Documents\northshore_library\NorthshoreLibraryVersion3\NorthshoreLibrary\NorthshoreLibrary\obj\Release\NorthshoreLibrary.Form1.resources
+C:\Users\brandan\Documents\northshore_library\NorthshoreLibraryVersion3\NorthshoreLibrary\NorthshoreLibrary\obj\Release\NorthshoreLibrary.Form2.resources
+C:\Users\brandan\Documents\northshore_library\NorthshoreLibraryVersion3\NorthshoreLibrary\NorthshoreLibrary\obj\Release\NorthshoreLibrary.Properties.Resources.resources
+C:\Users\brandan\Documents\northshore_library\NorthshoreLibraryVersion3\NorthshoreLibrary\NorthshoreLibrary\obj\Release\NorthshoreLibrary.csproj.GenerateResource.Cache
+C:\Users\brandan\Documents\northshore_library\NorthshoreLibraryVersion3\NorthshoreLibrary\NorthshoreLibrary\obj\Release\NorthshoreLibrary.exe
+C:\Users\brandan\Documents\northshore_library\NorthshoreLibraryVersion3\NorthshoreLibrary\NorthshoreLibrary\obj\Release\NorthshoreLibrary.pdb

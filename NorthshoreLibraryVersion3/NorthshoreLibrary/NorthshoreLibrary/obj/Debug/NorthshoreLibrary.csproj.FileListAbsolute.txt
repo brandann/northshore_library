@@ -7,3 +7,4 @@ C:\Users\brandan\Documents\northshore_library\NorthshoreLibraryVersion3\Northsho
 C:\Users\brandan\Documents\northshore_library\NorthshoreLibraryVersion3\NorthshoreLibrary\NorthshoreLibrary\obj\Debug\NorthshoreLibrary.csproj.GenerateResource.Cache
 C:\Users\brandan\Documents\northshore_library\NorthshoreLibraryVersion3\NorthshoreLibrary\NorthshoreLibrary\obj\Debug\NorthshoreLibrary.exe
 C:\Users\brandan\Documents\northshore_library\NorthshoreLibraryVersion3\NorthshoreLibrary\NorthshoreLibrary\obj\Debug\NorthshoreLibrary.pdb
+C:\Users\brandan\Documents\northshore_library\NorthshoreLibraryVersion3\NorthshoreLibrary\NorthshoreLibrary\obj\Debug\NorthshoreLibrary.Form2.resources

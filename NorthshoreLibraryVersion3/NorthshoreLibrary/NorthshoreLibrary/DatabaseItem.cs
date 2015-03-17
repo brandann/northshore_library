@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NorthshoreLibrary
 {
-    class DatabaseItem
+    public class DatabaseItem
     {
         public virtual string GetString() { return ""; }
     }

@@ -32,6 +32,8 @@
             this.SearchTerm1 = new System.Windows.Forms.ComboBox();
             this.Tabs = new System.Windows.Forms.TabControl();
             this.SearchTab = new System.Windows.Forms.TabPage();
+            this.ClearTermsButton = new System.Windows.Forms.Button();
+            this.SearchResultLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SearchRemoveButton = new System.Windows.Forms.Button();
             this.SearchTermList = new System.Windows.Forms.ListBox();
@@ -46,9 +48,9 @@
             this.ResultEdit = new System.Windows.Forms.Button();
             this.ResultAutocad = new System.Windows.Forms.Button();
             this.ResultPDF = new System.Windows.Forms.Button();
-            this.ResultPicture = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.SearchResultLabel = new System.Windows.Forms.Label();
+            this.AddDetailButton = new System.Windows.Forms.Button();
+            this.ResultPicture = new System.Windows.Forms.PictureBox();
             this.Tabs.SuspendLayout();
             this.SearchTab.SuspendLayout();
             this.ResultTab.SuspendLayout();
@@ -92,6 +94,8 @@
             // SearchTab
             // 
             this.SearchTab.BackColor = System.Drawing.SystemColors.Control;
+            this.SearchTab.Controls.Add(this.AddDetailButton);
+            this.SearchTab.Controls.Add(this.ClearTermsButton);
             this.SearchTab.Controls.Add(this.SearchResultLabel);
             this.SearchTab.Controls.Add(this.label2);
             this.SearchTab.Controls.Add(this.SearchRemoveButton);
@@ -108,6 +112,26 @@
             this.SearchTab.Size = new System.Drawing.Size(789, 535);
             this.SearchTab.TabIndex = 0;
             this.SearchTab.Text = "Search";
+            // 
+            // ClearTermsButton
+            // 
+            this.ClearTermsButton.Location = new System.Drawing.Point(26, 506);
+            this.ClearTermsButton.Name = "ClearTermsButton";
+            this.ClearTermsButton.Size = new System.Drawing.Size(75, 23);
+            this.ClearTermsButton.TabIndex = 15;
+            this.ClearTermsButton.Text = "Clear";
+            this.ClearTermsButton.UseVisualStyleBackColor = true;
+            this.ClearTermsButton.Click += new System.EventHandler(this.ClearTermsButton_Click);
+            // 
+            // SearchResultLabel
+            // 
+            this.SearchResultLabel.AutoSize = true;
+            this.SearchResultLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchResultLabel.Location = new System.Drawing.Point(24, 327);
+            this.SearchResultLabel.Name = "SearchResultLabel";
+            this.SearchResultLabel.Size = new System.Drawing.Size(52, 17);
+            this.SearchResultLabel.TabIndex = 14;
+            this.SearchResultLabel.Text = "label1";
             // 
             // label2
             // 
@@ -198,6 +222,7 @@
             this.ResultPrev.TabIndex = 10;
             this.ResultPrev.Text = "Previous";
             this.ResultPrev.UseVisualStyleBackColor = true;
+            this.ResultPrev.Click += new System.EventHandler(this.ResultPrev_Click);
             // 
             // ResultNext
             // 
@@ -207,6 +232,7 @@
             this.ResultNext.TabIndex = 9;
             this.ResultNext.Text = "Next";
             this.ResultNext.UseVisualStyleBackColor = true;
+            this.ResultNext.Click += new System.EventHandler(this.ResultNext_Click);
             // 
             // ResultList
             // 
@@ -215,6 +241,7 @@
             this.ResultList.Name = "ResultList";
             this.ResultList.Size = new System.Drawing.Size(339, 472);
             this.ResultList.TabIndex = 8;
+            this.ResultList.SelectedIndexChanged += new System.EventHandler(this.ResultList_SelectedIndexChanged);
             // 
             // ResultEdit
             // 
@@ -224,6 +251,7 @@
             this.ResultEdit.TabIndex = 7;
             this.ResultEdit.Text = "Edit";
             this.ResultEdit.UseVisualStyleBackColor = true;
+            this.ResultEdit.Click += new System.EventHandler(this.ResultEdit_Click);
             // 
             // ResultAutocad
             // 
@@ -243,14 +271,6 @@
             this.ResultPDF.Text = "PDF";
             this.ResultPDF.UseVisualStyleBackColor = true;
             // 
-            // ResultPicture
-            // 
-            this.ResultPicture.Location = new System.Drawing.Point(351, 6);
-            this.ResultPicture.Name = "ResultPicture";
-            this.ResultPicture.Size = new System.Drawing.Size(432, 472);
-            this.ResultPicture.TabIndex = 0;
-            this.ResultPicture.TabStop = false;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -262,14 +282,25 @@
             this.label3.Text = "Northshore Library Database";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // SearchResultLabel
+            // AddDetailButton
             // 
-            this.SearchResultLabel.AutoSize = true;
-            this.SearchResultLabel.Location = new System.Drawing.Point(23, 80);
-            this.SearchResultLabel.Name = "SearchResultLabel";
-            this.SearchResultLabel.Size = new System.Drawing.Size(35, 13);
-            this.SearchResultLabel.TabIndex = 14;
-            this.SearchResultLabel.Text = "label1";
+            this.AddDetailButton.Image = global::NorthshoreLibrary.Properties.Resources.dark_add_2x;
+            this.AddDetailButton.Location = new System.Drawing.Point(711, 6);
+            this.AddDetailButton.Name = "AddDetailButton";
+            this.AddDetailButton.Size = new System.Drawing.Size(75, 75);
+            this.AddDetailButton.TabIndex = 16;
+            this.AddDetailButton.Text = "button1";
+            this.AddDetailButton.UseVisualStyleBackColor = true;
+            this.AddDetailButton.Click += new System.EventHandler(this.AddDetailButton_Click);
+            // 
+            // ResultPicture
+            // 
+            this.ResultPicture.Location = new System.Drawing.Point(351, 6);
+            this.ResultPicture.Name = "ResultPicture";
+            this.ResultPicture.Size = new System.Drawing.Size(432, 472);
+            this.ResultPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ResultPicture.TabIndex = 0;
+            this.ResultPicture.TabStop = false;
             // 
             // Form1
             // 
@@ -314,6 +345,8 @@
         private System.Windows.Forms.Button ResultPDF;
         private System.Windows.Forms.PictureBox ResultPicture;
         private System.Windows.Forms.Label SearchResultLabel;
+        private System.Windows.Forms.Button ClearTermsButton;
+        private System.Windows.Forms.Button AddDetailButton;
     }
 }
 

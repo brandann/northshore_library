@@ -7,13 +7,17 @@ using System.Threading.Tasks;
 
 namespace NorthshoreLibrary
 {
-    class LibraryManager
+    public class LibraryManager
     {
         #region Private Members
-        private const string TAG_FILE_LOCATION = "C:\\Users\\brandan\\Documents\\northshore_library\\NorthshoreLibraryVersion3\\tags.txt";
-        private const string DETAIL_FILE_LOCATION = "C:\\Users\\brandan\\Documents\\northshore_library\\NorthshoreLibraryVersion3\\database.dat";
+        //private const string dir = "C:\\Users\\brandan\\Documents\\northshore_library\\NorthshoreLibraryVersion3\\";
+        private const string dir = "";
+        private const string DATABASE_LOCATION = dir + "database.dat";
+        private const string TAG_KEY = "<Tag>";
+        private const string DETAIL_KEY = "<Detail>";
+        private const string STANDARD_KEY = "<Standard>";
         private const string READ_ERROR_MESSAGE = "The file could not be read:";
-
+        
         private TagDatabase _tagDatabase;
         private DetailDatabase _detailDatabase;
         #endregion
@@ -73,11 +77,15 @@ namespace NorthshoreLibrary
             try
             {
                 string inline;
-                StreamReader file = new StreamReader(TAG_FILE_LOCATION);
+                StreamReader file = new StreamReader(DATABASE_LOCATION);
                 while ((inline = file.ReadLine()) != null)
                 {
-                    _tagDatabase.AddItem(new Tag(inline));
+                    if(inline.Contains(TAG_KEY))
+                    {
+                        _tagDatabase.AddItem(new Tag(inline.Replace(TAG_KEY, "")));
+                    }
                 }
+                file.Close();
                 return true;
             }
             catch (Exception e)
@@ -94,11 +102,15 @@ namespace NorthshoreLibrary
             try
             {
                 string inline;
-                StreamReader file = new StreamReader(DETAIL_FILE_LOCATION);
+                StreamReader file = new StreamReader(DATABASE_LOCATION);
                 while ((inline = file.ReadLine()) != null)
                 {
-                    _detailDatabase.AddItem(new Detail(inline));
+                    if(inline.Contains(DETAIL_KEY))
+                    {
+                        _detailDatabase.AddItem(new Detail(inline.Replace(DETAIL_KEY, "")));
+                    }
                 }
+                file.Close();
                 return true;
             }
             catch (Exception e)
