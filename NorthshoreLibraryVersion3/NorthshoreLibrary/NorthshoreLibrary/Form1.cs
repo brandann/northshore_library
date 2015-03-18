@@ -20,8 +20,8 @@ namespace NorthshoreLibrary
         private const string NAME_TERM = "Job Name";
         private const string NUMBER_TERM = "Job Number";
         private const string RESULT_LABEL = " Details Found";
-        //private const string dir = "C:\\Users\\brandan\\Documents\\northshore_library\\NorthshoreLibraryVersion3\\";
-        private const string dir = "";
+        private const string dir = "C:\\Users\\brandan\\Desktop\\NSMLibraryFloating\\";
+        //private const string dir = "";
 
         public Form1()
         {
@@ -33,6 +33,7 @@ namespace NorthshoreLibrary
             _libraryManager = new LibraryManager();
             //DatabaseConvert dc = new DatabaseConvert();
             ResetForm();
+            Search();
         }
 
         private void ResetForm()
@@ -257,6 +258,91 @@ namespace NorthshoreLibrary
             Form2 form = new Form2();
             form.Show();
             form.SetLibrary(this, _libraryManager);
+        }
+
+        private void ResultAutocad_Click(object sender, EventArgs e)
+        {
+            Detail det = _details[ResultList.SelectedIndex];
+            CopyFile(det.Dwg, det.Description);
+        }
+
+        private void ResultPDF_Click(object sender, EventArgs e)
+        {
+            Detail det = _details[ResultList.SelectedIndex];
+            CopyFile(det.Pdf, det.Description);
+        }
+        
+        private void CopyFile(string file, string des)
+        {
+            string copiedfilepath = CopyFileHelper(file, des);
+            if (copiedfilepath != "")
+            {
+                MessageBox.Show("File saved to: " + copiedfilepath, "File Saved");
+            }
+            else
+            {
+                MessageBox.Show("File Copy Error: " + file, "Error");
+            }
+        }
+
+        private string CopyFileHelper(string file, string des)
+        {
+            if (ResultList.SelectedIndex != -1)
+            {
+                string path = file;
+                int m = DateTime.Now.Minute;
+                int s = DateTime.Now.Second;
+                try
+                {
+
+                    string filename = path.Replace("files\\", "");
+                    var desktopFolder = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+                    var fullfilename = Path.Combine(desktopFolder, filename);
+
+                    File.Copy(dir + path, fullfilename);
+
+                    return fullfilename;
+                }
+                catch(Exception e)
+                {
+                    string type = (path.Contains(".pdf")) ? ".pdf" : ".dwg";
+                    string filename = "" + m + s + " - " + des + type;
+                    var desktopFolder = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+                    var fullfilename = Path.Combine(desktopFolder, filename);
+
+                    File.Copy(dir + path, fullfilename);
+
+                    return fullfilename;
+                }
+            }
+            return "";
+        }
+
+        private void SearchSearchButton_Click(object sender, EventArgs e)
+        {
+            Tabs.SelectedIndex += 1;
+            if(ResultList.Items.Count > 0)
+            {
+                ResultList.SelectedIndex = 0;
+            }
+        }
+
+        private void SearchRemoveButton_Click(object sender, EventArgs e)
+        {
+            int index = SearchTermList.SelectedIndex;
+            if (SearchTermList.Items.Count == 0)
+            {
+                return;
+            }
+            else if (index > -1)
+            {
+                SearchTermList.Items.RemoveAt(index);
+            }
+            else if (index == -1)
+            {
+                SearchTermList.Items.RemoveAt(0);
+            }
+            Search();
         }
     }
 }

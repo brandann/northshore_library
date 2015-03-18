@@ -10,8 +10,8 @@ namespace NorthshoreLibrary
     public class LibraryManager
     {
         #region Private Members
-        //private const string dir = "C:\\Users\\brandan\\Documents\\northshore_library\\NorthshoreLibraryVersion3\\";
-        private const string dir = "";
+        private const string dir = "C:\\Users\\brandan\\Desktop\\NSMLibraryFloating\\";
+        //private const string dir = "";
         private const string DATABASE_LOCATION = dir + "database.dat";
         private const string TAG_KEY = "<Tag>";
         private const string DETAIL_KEY = "<Detail>";
@@ -20,6 +20,7 @@ namespace NorthshoreLibrary
         
         private TagDatabase _tagDatabase;
         private DetailDatabase _detailDatabase;
+        private List<string> _database;
         #endregion
 
         #region Public Methods
@@ -67,23 +68,21 @@ namespace NorthshoreLibrary
         #region Private Methods
         private void Initilize()
         {
+            LoadDatabase();
             LoadTags();
             LoadDetails();
         }
 
-        private bool LoadTags()
+        private bool LoadDatabase()
         {
-            _tagDatabase = new TagDatabase();
+            _database = new List<string>();
             try
             {
                 string inline;
                 StreamReader file = new StreamReader(DATABASE_LOCATION);
                 while ((inline = file.ReadLine()) != null)
                 {
-                    if(inline.Contains(TAG_KEY))
-                    {
-                        _tagDatabase.AddItem(new Tag(inline.Replace(TAG_KEY, "")));
-                    }
+                    _database.Add(inline);
                 }
                 file.Close();
                 return true;
@@ -96,27 +95,36 @@ namespace NorthshoreLibrary
             return false;
         }
 
+        private bool LoadTags()
+        {
+            _tagDatabase = new TagDatabase();
+            if(_database != null)
+            {
+                for (int i = 0; i < _database.Count; i++)
+                {
+                    if (_database[i].Contains(TAG_KEY))
+                    {
+                        _tagDatabase.AddItem(new Tag(_database[i].Replace(TAG_KEY, "")));
+                    }
+                }
+                return true;
+            }
+            return false;
+        }
+
         private bool LoadDetails()
         {
             _detailDatabase = new DetailDatabase();
-            try
+            if (_database != null)
             {
-                string inline;
-                StreamReader file = new StreamReader(DATABASE_LOCATION);
-                while ((inline = file.ReadLine()) != null)
+                for (int i = 0; i < _database.Count; i++)
                 {
-                    if(inline.Contains(DETAIL_KEY))
+                    if (_database[i].Contains(DETAIL_KEY))
                     {
-                        _detailDatabase.AddItem(new Detail(inline.Replace(DETAIL_KEY, "")));
+                        _detailDatabase.AddItem(new Detail(_database[i].Replace(DETAIL_KEY, "")));
                     }
                 }
-                file.Close();
                 return true;
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(READ_ERROR_MESSAGE);
-                Console.WriteLine(e.Message);
             }
             return false;
         }

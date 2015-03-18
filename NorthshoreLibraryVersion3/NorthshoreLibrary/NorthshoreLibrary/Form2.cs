@@ -16,8 +16,8 @@ namespace NorthshoreLibrary
         private Detail _currentDetail;
         private LibraryManager _libraryManager;
 
-        //private const string dir = "C:\\Users\\brandan\\Documents\\northshore_library\\NorthshoreLibraryVersion3\\";
-        private const string dir = "";
+        private const string dir = "C:\\Users\\brandan\\Desktop\\NSMLibraryFloating\\";
+        //private const string dir = "";
 
         public Form2()
         {
