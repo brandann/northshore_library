@@ -20,8 +20,6 @@ namespace NorthshoreLibrary
         private const string NAME_TERM = "Job Name";
         private const string NUMBER_TERM = "Job Number";
         private const string RESULT_LABEL = " Details Found";
-        private const string dir = "C:\\Users\\brandan\\Desktop\\NSMLibraryFloating\\";
-        //private const string dir = "";
 
         public Form1()
         {
@@ -34,6 +32,11 @@ namespace NorthshoreLibrary
             //DatabaseConvert dc = new DatabaseConvert();
             ResetForm();
             Search();
+        }
+
+        public void ReloadForm()
+        {
+            ResetForm();
         }
 
         private void ResetForm()
@@ -50,6 +53,8 @@ namespace NorthshoreLibrary
             SearchTermList.Items.Clear();
 
             SearchResultLabel.Text = _libraryManager.Details.GetCount() + RESULT_LABEL;
+
+            Tabs.SelectedIndex = 0;
         }
 
         private void SearchTerm1_SelectedIndexChanged(object sender, EventArgs e)
@@ -231,8 +236,8 @@ namespace NorthshoreLibrary
                 string jpgfile = det.Jpg;
                 string dwgfile = det.Dwg;
 
-                Console.WriteLine(dir + jpgfile);
-                ResultPicture.Image = new Bitmap(dir + jpgfile);
+                Console.WriteLine(Directory.Location + jpgfile);
+                ResultPicture.Image = new Bitmap(Directory.Location + jpgfile);
                 
             }
         }
@@ -255,6 +260,7 @@ namespace NorthshoreLibrary
 
         private void AddDetailButton_Click(object sender, EventArgs e)
         {
+            //MessageBox.Show("New Detail Feature Not Working Yet", "Sorry");
             Form2 form = new Form2();
             form.Show();
             form.SetLibrary(this, _libraryManager);
@@ -299,7 +305,7 @@ namespace NorthshoreLibrary
                     var desktopFolder = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
                     var fullfilename = Path.Combine(desktopFolder, filename);
 
-                    File.Copy(dir + path, fullfilename);
+                    File.Copy(Directory.Location + path, fullfilename);
 
                     return fullfilename;
                 }
@@ -310,7 +316,7 @@ namespace NorthshoreLibrary
                     var desktopFolder = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
                     var fullfilename = Path.Combine(desktopFolder, filename);
 
-                    File.Copy(dir + path, fullfilename);
+                    File.Copy(Directory.Location + path, fullfilename);
 
                     return fullfilename;
                 }

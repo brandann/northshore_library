@@ -8,3 +8,4 @@ C:\Users\brandan\Documents\northshore_library\NorthshoreLibraryVersion3\Northsho
 C:\Users\brandan\Documents\northshore_library\NorthshoreLibraryVersion3\NorthshoreLibrary\NorthshoreLibrary\obj\Release\NorthshoreLibrary.exe
 C:\Users\brandan\Documents\northshore_library\NorthshoreLibraryVersion3\NorthshoreLibrary\NorthshoreLibrary\obj\Release\NorthshoreLibrary.pdb
 C:\Users\brandan\Documents\northshore_library\NorthshoreLibraryVersion3\NorthshoreLibrary\NorthshoreLibrary\obj\Release\NorthshoreLibrary.csprojResolveAssemblyReference.cache
+C:\Users\brandan\Documents\northshore_library\NorthshoreLibraryVersion3\NorthshoreLibrary\NorthshoreLibrary\obj\Release\NorthshoreLibrary.verify.resources

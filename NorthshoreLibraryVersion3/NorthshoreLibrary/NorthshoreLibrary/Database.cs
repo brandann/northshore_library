@@ -15,5 +15,6 @@ namespace NorthshoreLibrary
         public List<DatabaseItem> GetItems() { return _databaseItems; }
         public int GetCount() { return _databaseItems.Count; }
         public void ClearItems() { _databaseItems.Clear(); }
+        virtual public bool Replace(Detail det) { return false; }
     }
 }

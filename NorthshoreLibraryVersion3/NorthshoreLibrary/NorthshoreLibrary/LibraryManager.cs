@@ -9,21 +9,8 @@ namespace NorthshoreLibrary
 {
     public class LibraryManager
     {
-        #region Private Members
-        private const string dir = "C:\\Users\\brandan\\Desktop\\NSMLibraryFloating\\";
-        //private const string dir = "";
-        private const string DATABASE_LOCATION = dir + "database.dat";
-        private const string TAG_KEY = "<Tag>";
-        private const string DETAIL_KEY = "<Detail>";
-        private const string STANDARD_KEY = "<Standard>";
-        private const string READ_ERROR_MESSAGE = "The file could not be read:";
-        
-        private TagDatabase _tagDatabase;
-        private DetailDatabase _detailDatabase;
-        private List<string> _database;
-        #endregion
+        #region Public
 
-        #region Public Methods
         public TagDatabase Tags
         {
             get { return _tagDatabase; }
@@ -32,6 +19,20 @@ namespace NorthshoreLibrary
         public DetailDatabase Details
         {
             get { return _detailDatabase; }
+        }
+
+        public void Replace(Detail det)
+        {
+            Initilize();
+            Details.Replace(det);
+            SaveDatabase();
+        }
+
+        public void Add(Detail det)
+        {
+            Initilize();
+            Details.AddItem(det);
+            SaveDatabase();
         }
 
         public LibraryManager()
@@ -66,11 +67,51 @@ namespace NorthshoreLibrary
         #endregion
 
         #region Private Methods
+
+        #region Private Members
+        private const string TAG_KEY = "<Tag>";
+        private const string DETAIL_KEY = "<Detail>";
+        private const string STANDARD_KEY = "<Standard>";
+        private const string READ_ERROR_MESSAGE = "The file could not be read:";
+
+        private TagDatabase _tagDatabase;
+        private DetailDatabase _detailDatabase;
+        private List<string> _database;
+        #endregion
+
         private void Initilize()
         {
             LoadDatabase();
             LoadTags();
             LoadDetails();
+        }
+
+        private bool SaveDatabase()
+        {
+            try
+            {
+                List<DatabaseItem> details = Details.GetItems();
+                List<DatabaseItem> tags = Tags.GetItems();
+                StreamWriter file = new StreamWriter(Directory.Database);
+                for(int i = 0; i < tags.Count; i++)
+                {
+                    Tag t = (Tag)tags[i];
+                    file.WriteLine(TAG_KEY + t.GetCat() + "," + t.GetTag());
+                }
+                for (int j = 0; j < details.Count; j++)
+                {
+                    Detail d = (Detail)details[j];
+                    file.WriteLine(DETAIL_KEY + d.ToString());
+                }
+                file.Close();
+                return true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("WRITE ERROR");
+                Console.WriteLine(e.Message);
+                return false;
+            }
         }
 
         private bool LoadDatabase()
@@ -79,7 +120,7 @@ namespace NorthshoreLibrary
             try
             {
                 string inline;
-                StreamReader file = new StreamReader(DATABASE_LOCATION);
+                StreamReader file = new StreamReader(Directory.Database);
                 while ((inline = file.ReadLine()) != null)
                 {
                     _database.Add(inline);

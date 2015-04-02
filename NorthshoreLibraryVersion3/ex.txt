@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document Version="1">
+  <Page Index="0">
+    <Label>1</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="1">
+    <Label>2</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="2">
+    <Label>3</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="3">
+    <Label>4</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="4">
+    <Label>5</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="5">
+    <Label>6</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="6">
+    <Label>7</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="7">
+    <Label>8</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="8">
+    <Label>9</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="9">
+    <Label>10</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="10">
+    <Label>11</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="11">
+    <Label>12</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+    <Annotation>
+      <Page>12</Page>
+      <Contents />
+      <ModDate>2015-03-05T13:52:29.0000000Z</ModDate>
+      <Color>#FFFF00</Color>
+      <Type>Line</Type>
+      <ID>JBJYQTDZSJGSZSZM</ID>
+      <TypeInternal>Bluebeam.PDF.Annotations.AnnotationLine</TypeInternal>
+      <Raw>789c558fcd4e843014855fa5bb6917f6f6f687013361014423199c68498c10168c7481d1621a58ccdb0f987161eeee26df39df391ce0d862ac78ac454cd068c9a521184b8e264a082a93f0f5d9414dcfa1f743ef19e4c1f5f338f9a29f1d2deea540239430a894d1d19d887742ec18d8e5fc498fa3770c32fb944f5fcbf746f42d651d3c57b4cccaf797ba686cf9681bdb54bfc47cf971b041f0ea3ee616f79a47370fc985960413e4eaa69af0bde9e08168c85b244844b736ad83de8802bb5ebd856553185c485338e5f4b4cc761c5c3e05ef0283ea9fbc9132f9934fd32b8d7449f9</Raw>
+      <Index>0</Index>
+      <Custom>
+        <SQIN />
+      </Custom>
+      <Subject>Line</Subject>
+      <CreationDate>2015-03-05T13:35:46.0000000Z</CreationDate>
+      <Author>brandan</Author>
+    </Annotation>
+    <Annotation>
+      <Page>12</Page>
+      <Contents />
+      <ModDate>2015-03-05T13:52:29.0000000Z</ModDate>
+      <Color>#FFFF00</Color>
+      <Type>Line</Type>
+      <ID>BNQZWQUSLKETZZHY</ID>
+      <TypeInternal>Bluebeam.PDF.Annotations.AnnotationLine</TypeInternal>
+      <Raw>789c55cf314fc3301005e0bfe2adf680ef1cdb34415586a42050d356c541158932b8c443103895950cfc7b621003baeda477f7bdcd06aa56e03ae5a95e13a195e4999444608a5c2b41845219bf95b2839a5e82f5bdf50ccae0ec348c7e6b2747b777090a8d12b590526bbcc17485b86260e6cb3bad06ef1814e6a91c3fe6cf98b02d651d1cf6b4389c9af3e9c554bbfbba691e5f7f12d3d7d5410cc1b37b9ba24c7019654a255cfcca528e51a6b5e02aca1e8882b25d3604bbe5d552e94c249865ea78ad1843ef429ec3b1a4c7793243efca31781718ecffe97592647ffa3cff0604bb4a4e</Raw>
+      <Index>1</Index>
+      <Custom>
+        <SQIN />
+      </Custom>
+      <Subject>Line</Subject>
+      <CreationDate>2015-03-05T13:35:50.0000000Z</CreationDate>
+      <Author>brandan</Author>
+    </Annotation>
+    <Annotation>
+      <Page>12</Page>
+      <Contents />
+      <ModDate>2015-03-05T13:52:29.0000000Z</ModDate>
+      <Color>#FFFF00</Color>
+      <Type>Line</Type>
+      <ID>ZSFXSBRYHWEOKJMT</ID>
+      <TypeInternal>Bluebeam.PDF.Annotations.AnnotationLine</TypeInternal>
+      <Raw>789c55cf414fc3300c05e0bf92dbd203b19d346d83a61eda316db03269a934a0ea2163396c82762add817f4f030809f966e9d9df9bcf61d3502685319961a4b4113a964c110a5249123699485ba8f96170ddd17511948377e3a9ef166ef47c712b91342ad4a494d6e606b319e22c027b3d9cf9e6d4f9080abb2efbb7eb7b48b886472d3c56fcc52e9f6cb17b5eedefb60ff755fd9d183f2f1e420876fe756c28d522fe759108aa54243faa241518cb16962c86b221460cdbe9d15467cf14d869ea70abe887a31ff21cb6252fdcc784a9fe91b5947fe43cff025bfc45ee</Raw>
+      <Index>2</Index>
+      <Custom>
+        <SQIN />
+      </Custom>
+      <Subject>Line</Subject>
+      <CreationDate>2015-03-05T13:35:59.0000000Z</CreationDate>
+      <Author>brandan</Author>
+    </Annotation>
+    <Annotation>
+      <Page>12</Page>
+      <Contents />
+      <ModDate>2015-03-05T13:52:29.0000000Z</ModDate>
+      <Color>#FFFF00</Color>
+      <Type>Line</Type>
+      <ID>ZLGTLJCNXAZNGGPN</ID>
+      <TypeInternal>Bluebeam.PDF.Annotations.AnnotationLine</TypeInternal>
+      <Raw>789c55cf4d4bc3401006e0bfb2b76e0eeeccec47929512305b0c4a1ac50494861cb6760f154d24a607ffbd498b82cced8577e699f51aca5611895462cc481b143a318c30b122b6f62fe9a0e1fbd1f707df47e0c6e0a7e3d06ffc14f8e65a2219546848a918e515a62bc45504f569ffc6cb631f22c8eb3b37bc9f3e96866f79d441b5e5bbb268ca7b57bddcecaaa278acce8de9fb33c05282a7f03ab50ab550179996c29e656922e8224b96a4835ba6c1b5c48861379f9a5f7a660aea799a655b3e8c873066193c389efbaf99b3fd873652da5f7496fd0028bd468c</Raw>
+      <Index>3</Index>
+      <Custom>
+        <SQIN />
+      </Custom>
+      <Subject>Line</Subject>
+      <CreationDate>2015-03-05T13:36:02.0000000Z</CreationDate>
+      <Author>brandan</Author>
+    </Annotation>
+    <Annotation>
+      <Page>12</Page>
+      <Contents />
+      <ModDate>2015-03-05T13:52:29.0000000Z</ModDate>
+      <Color>#FFFF00</Color>
+      <Type>Line</Type>
+      <ID>OZDPRZLHHIQILSCU</ID>
+      <TypeInternal>Bluebeam.PDF.Annotations.AnnotationLine</TypeInternal>
+      <Raw>789c558f516b83301485ff4ade9a3c2cf7c6184d46f1a19151c1b65bed18547c48d7301c5b2c621ffaefa7960dc67d3bf0ddf39de512ca5a68c9758c9a08154b6ea4240253c31363fe92060ef4d4bb70768181edbd1bda2ee46ef0347f8c502894a8849409ea07d40bc40583ea7afaa4651b3c835555d8eeebfa3d11aea6ac81ed86ee8ef9f3fe58aed7c54b5156f6752686dbc5c304c1debf0fb548132eef6632e1f16ca6532e663325a6a481271283ad0511049bb16a9cf4462454e31da66fabae3ffb3ecb6067a9ed2e6df860b0f9a7ada2c8fc6a67d90fdce34784</Raw>
+      <Index>4</Index>
+      <Custom>
+        <SQIN />
+      </Custom>
+      <Subject>Line</Subject>
+      <CreationDate>2015-03-05T13:36:08.0000000Z</CreationDate>
+      <Author>brandan</Author>
+    </Annotation>
+    <Annotation>
+      <Page>12</Page>
+      <Contents>11 sf</Contents>
+      <ModDate>2015-03-05T13:52:29.0000000Z</ModDate>
+      <Color>#FF9900</Color>
+      <Type>Polygon</Type>
+      <ID>EQFLJIFAVCKJVAZK</ID>
+      <TypeInternal>Bluebeam.PDF.Annotations.AnnotationMeasureArea</TypeInternal>
+      <Raw>789cad524d6f9b4010fd2b2b7a081cccb0e00f2036510c41715a3b4eb01db59655adc9c490ae01c112dbffbe0b4eaa46eab1739bd9999d37efbde11082487dc933e1925be46f28d298116a16e292083c8a0ee3e92e7363cc04969784a71976124c778970a9a5db4d5b9cf3bc74bf84a1214383c9021e31162cdb718c7ea18893451ec58c2304588884d8b0c2526ec16a6d3aa6deedf54c42fbe640376d87585d5bb7fb03eb9f15d94d4df2d7505bd84098727e5fb03815274261a16e4b963db34c03bf4426d23c0b984035704d83f60ccbe851ab3ba0b463d8178671a1c1a3af0eaf8e7b4edeb0ac64f748a1baa15c79c36dfe7c22f221abdce30b1b298910850b70381c7499eb79b9832a4e70cf40a69d672618c84950884cdd58522a495b9c0a1c290d9390883d3fbf5dcf27ab8f5d635ee316d97e1e848ff856b720cf5d5581f148317553a221953871f9512bd4ffd049391ff6e9a883d5de441dc781638bd6a394542f436898f03488eaedabfa475c725697889cb4fa6a304556d525c2787cbf7d9d8bf2e7747673fbb09c4eeea6e1f2e9e9fbec6c8165968ab5345ec30dcceafd16cb302ff74cc0524d1bd988a11bd4b2653810106a1810064494354214a99ae76d601c4dfc9cd7fb465ab656b50dcca6eacd43f8ed6e125eaffcaf77abeb1f5f5bc0a25932cff9699767ad31d7a6ddd79d77d7517dd078acd7d5ad778f0df4beb4947f56af525b0234084917fc3595c0fac4d8c0bdaffa7991663b79f32763f54cd3f93096e7fd06c291056f</Raw>
+      <Index>5</Index>
+      <Custom>
+        <SQIN />
+      </Custom>
+      <Subject>Rectangle Sketch to Scale</Subject>
+      <CreationDate>2015-03-05T13:47:11.0000000Z</CreationDate>
+      <Author>brandan</Author>
+    </Annotation>
+    <Annotation>
+      <Page>12</Page>
+      <Contents>6 sf</Contents>
+      <ModDate>2015-03-05T13:56:47.0000000Z</ModDate>
+      <Color>#FF0000</Color>
+      <Type>Polygon</Type>
+      <ID>OLRJFFRXCPAVPMWD</ID>
+      <TypeInternal>Bluebeam.PDF.Annotations.AnnotationMeasureArea</TypeInternal>
+      <Raw>789cad925d6f9b301486ff8ac52e0a17e1d821214013aa0686966e69d290b693a26872881be8cc878c69927f3f43d6699b7639235fd83e8773cefb3ee33184b1fe5216d2439f187f63324b2822fd4a5e23c94eb247797628bc841592896bc4b382f552961d52e911cb74dab0a4e4a5f03e441156cb80d91a562c91b43870167f673249d7659c50ce2064954c91034f4ca82aacde106c9b03cb1d2232b047e6c87611196193388ef5cf1b77643ac446bf655d6eb6300b360461d356dbd9429471bea86892c9b3ba18c25adf095aec69614020189559598454323df4fa980cb18587c41adab8dfc3ce15c6572aea56e58d6015e8e39b53ced11b13b54a9a68c4c4da8d3fde95fb33520f45ed9d5ee8444ba5ac3c80e3f168aab3598a03d449ca720aead8db534941658286d4d14b94d64acdf5b96213ad95185299f3cbdbed72f6f45e6bca1bb663345f86d18abd355daf97a8ba62c944eb9b7dd50daae599ab1f750efe0f03b5cb607f0c75b4ba9988ebba70eabaf56d54bf8ca115c237206e76affa2fd3d1c575244bd4f96ec09cd1ba110ca6d3c5ee7529c5b7f9fce1eef3e2e37310460feb7b454c87c66391c98d02b29506ee9b7cc744548a9c4a78d4b3d63ce50a2696a3960ba1e200431422291a0671ac1bbebf85693c0b4adee4adc174a31b5bb89feb8b2fabbb285a7d0d96b74fcbf973d8352cdb22cb929f0f65d101ab68c4a6fb9346256ec7ded0b43bf61425a6d592165cdcabf55600032234808e3d84dbe2aaf9674420565f37c4b4147b267c1f16811e9455561c94187f713718bd73e7fb3f001839120d</Raw>
+      <Index>6</Index>
+      <Custom>
+        <SQIN />
+      </Custom>
+      <Subject>Rectangle Sketch to Scale</Subject>
+      <CreationDate>2015-03-05T13:56:02.0000000Z</CreationDate>
+      <Author>brandan</Author>
+    </Annotation>
+  </Page>
+  <Page Index="12">
+    <Label>13</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="13">
+    <Label>14</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="14">
+    <Label>15</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="15">
+    <Label>16</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="16">
+    <Label>17</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="17">
+    <Label>18</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="18">
+    <Label>19</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="19">
+    <Label>20</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="20">
+    <Label>21</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="21">
+    <Label>22</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="22">
+    <Label>23</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="23">
+    <Label>24</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="24">
+    <Label>25</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="25">
+    <Label>26</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="26">
+    <Label>27</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="27">
+    <Label>28</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="28">
+    <Label>29</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <Page Index="29">
+    <Label>30</Label>
+    <Width>2592</Width>
+    <Height>1728</Height>
+  </Page>
+  <GlobalResources>
+    <Resource>
+      <ID>789cf3f573f5080cf5f5f4f2750b0d0f8ff4030028ff04ec</ID>
+      <Raw>789c7dd03d0f82301006e0bfd2b000835e4bf85894c44098d4183e8c893a80298681624a6be2bfb7601c0c9676b91b9e7b2fb75a41fe7a50d8d1b2979c42262b31f4e916528b808b1a86d688a05a98aa346c389dbf642fdb8af2a4e36d29a0b04c1b228497d81b9f0f89fa312290c44870a92667961d865788670790893b2837e085d21a698cd2d1d23177a3cbedeb4ff0bf65731dba383e9eb29fc0a3cedea43ae74c66c9ef5414ac1151c79e94f74dc786c36242bcc0c54118be015bc17f4d</Raw>
+    </Resource>
+    <Resource>
+      <ID>789cf3f50df4f2f6770d7776710b0cf1f30c0100288a04c9</ID>
+      <Raw>789c7dd03d0f82301006e0bfd2b000835e4bf85894c44098d4183e8c893a80298681624a6be2bfb7601c0c9676b91b9e7b2fb75a41fe7a50d8d1b2979c42262b31f4e916528b808b1a86d688a05a98aa346c389dbf642fdb8af2a4e36d29a0b04c1b228497d81b9f0f89fa312290c44870a92667961d865788670790893b2837e085d21a698cd2d1d23177a3cbedeb4ff0bf65731dba383e9eb29fc0a3cedea43ae74c66c9ef5414ac1151c79e94f74dc786c36242bcc0c54118be015bc17f4d</Raw>
+    </Resource>
+  </GlobalResources>
+</Document>

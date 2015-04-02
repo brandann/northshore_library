@@ -48,7 +48,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.detailpicture = new System.Windows.Forms.PictureBox();
             this.taglist = new System.Windows.Forms.ListBox();
             this.selectedtagslist = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -59,6 +58,7 @@
             this.compcmb = new System.Windows.Forms.ComboBox();
             this.catcmb = new System.Windows.Forms.ComboBox();
             this.includebool = new System.Windows.Forms.CheckBox();
+            this.detailpicture = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.detailpicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -228,15 +228,6 @@
             this.label11.TabIndex = 25;
             this.label11.Text = "Tags";
             // 
-            // detailpicture
-            // 
-            this.detailpicture.Location = new System.Drawing.Point(12, 12);
-            this.detailpicture.Name = "detailpicture";
-            this.detailpicture.Size = new System.Drawing.Size(459, 634);
-            this.detailpicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.detailpicture.TabIndex = 0;
-            this.detailpicture.TabStop = false;
-            // 
             // taglist
             // 
             this.taglist.FormattingEnabled = true;
@@ -263,6 +254,7 @@
             this.button1.TabIndex = 28;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -272,6 +264,7 @@
             this.button2.TabIndex = 29;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -281,6 +274,7 @@
             this.button3.TabIndex = 30;
             this.button3.Text = "...";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -290,6 +284,7 @@
             this.button4.TabIndex = 31;
             this.button4.Text = "...";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -299,6 +294,7 @@
             this.button5.TabIndex = 32;
             this.button5.Text = "...";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // compcmb
             // 
@@ -334,6 +330,15 @@
             this.includebool.TabIndex = 35;
             this.includebool.Text = "Include";
             this.includebool.UseVisualStyleBackColor = true;
+            // 
+            // detailpicture
+            // 
+            this.detailpicture.Location = new System.Drawing.Point(12, 12);
+            this.detailpicture.Name = "detailpicture";
+            this.detailpicture.Size = new System.Drawing.Size(459, 634);
+            this.detailpicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.detailpicture.TabIndex = 0;
+            this.detailpicture.TabStop = false;
             // 
             // Form2
             // 
@@ -373,7 +378,7 @@
             this.Controls.Add(this.detailpicture);
             this.Name = "Form2";
             this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Form2_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.detailpicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

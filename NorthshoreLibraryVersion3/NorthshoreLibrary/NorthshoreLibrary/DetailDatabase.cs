@@ -35,5 +35,18 @@ namespace NorthshoreLibrary
             }
             return results;
         }
+
+        public override bool Replace(Detail det)
+        {
+            for(int i = 0; i < _databaseItems.Count; i++)
+            {
+                if(((Detail)_databaseItems[i]).ID == det.ID)
+                {
+                    _databaseItems[i] = det;
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }

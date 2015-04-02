@@ -32,6 +32,9 @@
             this.SearchTerm1 = new System.Windows.Forms.ComboBox();
             this.Tabs = new System.Windows.Forms.TabControl();
             this.SearchTab = new System.Windows.Forms.TabPage();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.ClearTermsButton = new System.Windows.Forms.Button();
             this.SearchResultLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,9 +49,7 @@
             this.ResultAutocad = new System.Windows.Forms.Button();
             this.ResultPDF = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.AddDetailButton = new System.Windows.Forms.Button();
             this.SearchRemoveButton = new System.Windows.Forms.Button();
             this.SearchSearchButton = new System.Windows.Forms.Button();
@@ -64,7 +65,7 @@
             // 
             this.SearchTerm2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SearchTerm2.FormattingEnabled = true;
-            this.SearchTerm2.Location = new System.Drawing.Point(102, 50);
+            this.SearchTerm2.Location = new System.Drawing.Point(26, 74);
             this.SearchTerm2.Name = "SearchTerm2";
             this.SearchTerm2.Size = new System.Drawing.Size(300, 21);
             this.SearchTerm2.TabIndex = 0;
@@ -78,7 +79,7 @@
             "Job Name",
             "Job Number",
             "Detail Tag"});
-            this.SearchTerm1.Location = new System.Drawing.Point(102, 23);
+            this.SearchTerm1.Location = new System.Drawing.Point(26, 47);
             this.SearchTerm1.Name = "SearchTerm1";
             this.SearchTerm1.Size = new System.Drawing.Size(300, 21);
             this.SearchTerm1.TabIndex = 1;
@@ -98,6 +99,8 @@
             // SearchTab
             // 
             this.SearchTab.BackColor = System.Drawing.SystemColors.Control;
+            this.SearchTab.Controls.Add(this.label3);
+            this.SearchTab.Controls.Add(this.button1);
             this.SearchTab.Controls.Add(this.checkBox3);
             this.SearchTab.Controls.Add(this.checkBox2);
             this.SearchTab.Controls.Add(this.checkBox1);
@@ -120,9 +123,42 @@
             this.SearchTab.TabIndex = 0;
             this.SearchTab.Text = "Search";
             // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(218, 80);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(74, 17);
+            this.checkBox3.TabIndex = 19;
+            this.checkBox3.Text = "Standards";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.Visible = false;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(125, 80);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(72, 17);
+            this.checkBox2.TabIndex = 18;
+            this.checkBox2.Text = "Northclad";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.Visible = false;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(26, 80);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(78, 17);
+            this.checkBox1.TabIndex = 17;
+            this.checkBox1.Text = "Northshore";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.Visible = false;
+            // 
             // ClearTermsButton
             // 
-            this.ClearTermsButton.Location = new System.Drawing.Point(677, 350);
+            this.ClearTermsButton.Location = new System.Drawing.Point(730, 386);
             this.ClearTermsButton.Name = "ClearTermsButton";
             this.ClearTermsButton.Size = new System.Drawing.Size(75, 23);
             this.ClearTermsButton.TabIndex = 15;
@@ -155,7 +191,7 @@
             this.SearchTermList.FormattingEnabled = true;
             this.SearchTermList.Location = new System.Drawing.Point(26, 392);
             this.SearchTermList.Name = "SearchTermList";
-            this.SearchTermList.Size = new System.Drawing.Size(698, 173);
+            this.SearchTermList.Size = new System.Drawing.Size(689, 173);
             this.SearchTermList.TabIndex = 10;
             this.SearchTermList.DoubleClick += new System.EventHandler(this.SearchTermList_DoubleClick);
             // 
@@ -164,7 +200,7 @@
             this.SearchResultList.FormattingEnabled = true;
             this.SearchResultList.Location = new System.Drawing.Point(26, 103);
             this.SearchResultList.Name = "SearchResultList";
-            this.SearchResultList.Size = new System.Drawing.Size(698, 277);
+            this.SearchResultList.Size = new System.Drawing.Size(689, 277);
             this.SearchResultList.TabIndex = 7;
             this.SearchResultList.DoubleClick += new System.EventHandler(this.SearchResultList_DoubleClick);
             // 
@@ -258,54 +294,32 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(241, 9);
+            this.label3.Location = new System.Drawing.Point(193, 6);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(390, 31);
             this.label3.TabIndex = 3;
             this.label3.Text = "Northshore Library Database";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label3.Visible = false;
             // 
-            // checkBox1
+            // button1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(26, 80);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(78, 17);
-            this.checkBox1.TabIndex = 17;
-            this.checkBox1.Text = "Northshore";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.Visible = false;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(125, 80);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(72, 17);
-            this.checkBox2.TabIndex = 18;
-            this.checkBox2.Text = "Northclad";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.Visible = false;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(218, 80);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(74, 17);
-            this.checkBox3.TabIndex = 19;
-            this.checkBox3.Text = "Standards";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.Visible = false;
+            this.button1.Image = global::NorthshoreLibrary.Properties.Resources.dark_warn;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(721, 118);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(84, 50);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Missing Tags";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // AddDetailButton
             // 
-            this.AddDetailButton.Image = global::NorthshoreLibrary.Properties.Resources.dark_list___add_2x;
+            this.AddDetailButton.Image = global::NorthshoreLibrary.Properties.Resources.dark_list___add;
             this.AddDetailButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.AddDetailButton.Location = new System.Drawing.Point(649, 6);
+            this.AddDetailButton.Location = new System.Drawing.Point(721, 6);
             this.AddDetailButton.Name = "AddDetailButton";
-            this.AddDetailButton.Size = new System.Drawing.Size(75, 75);
+            this.AddDetailButton.Size = new System.Drawing.Size(84, 50);
             this.AddDetailButton.TabIndex = 16;
             this.AddDetailButton.Text = "New Detail";
             this.AddDetailButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -314,11 +328,11 @@
             // 
             // SearchRemoveButton
             // 
-            this.SearchRemoveButton.Image = global::NorthshoreLibrary.Properties.Resources.dark_x_2x;
+            this.SearchRemoveButton.Image = global::NorthshoreLibrary.Properties.Resources.dark_x;
             this.SearchRemoveButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.SearchRemoveButton.Location = new System.Drawing.Point(730, 490);
+            this.SearchRemoveButton.Location = new System.Drawing.Point(721, 515);
             this.SearchRemoveButton.Name = "SearchRemoveButton";
-            this.SearchRemoveButton.Size = new System.Drawing.Size(75, 75);
+            this.SearchRemoveButton.Size = new System.Drawing.Size(84, 50);
             this.SearchRemoveButton.TabIndex = 11;
             this.SearchRemoveButton.Text = "Remove";
             this.SearchRemoveButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -327,11 +341,11 @@
             // 
             // SearchSearchButton
             // 
-            this.SearchSearchButton.Image = global::NorthshoreLibrary.Properties.Resources.Search;
+            this.SearchSearchButton.Image = global::NorthshoreLibrary.Properties.Resources.dark_search;
             this.SearchSearchButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.SearchSearchButton.Location = new System.Drawing.Point(730, 6);
+            this.SearchSearchButton.Location = new System.Drawing.Point(721, 62);
             this.SearchSearchButton.Name = "SearchSearchButton";
-            this.SearchSearchButton.Size = new System.Drawing.Size(75, 75);
+            this.SearchSearchButton.Size = new System.Drawing.Size(84, 50);
             this.SearchSearchButton.TabIndex = 9;
             this.SearchSearchButton.Text = "Search";
             this.SearchSearchButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -340,11 +354,11 @@
             // 
             // SearchAddButton
             // 
-            this.SearchAddButton.Image = global::NorthshoreLibrary.Properties.Resources.dark_add_2x;
+            this.SearchAddButton.Image = global::NorthshoreLibrary.Properties.Resources.dark_add;
             this.SearchAddButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.SearchAddButton.Location = new System.Drawing.Point(730, 305);
+            this.SearchAddButton.Location = new System.Drawing.Point(721, 330);
             this.SearchAddButton.Name = "SearchAddButton";
-            this.SearchAddButton.Size = new System.Drawing.Size(75, 75);
+            this.SearchAddButton.Size = new System.Drawing.Size(84, 50);
             this.SearchAddButton.TabIndex = 8;
             this.SearchAddButton.Text = "Add";
             this.SearchAddButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -365,7 +379,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(821, 616);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.Tabs);
             this.Name = "Form1";
             this.Text = "Northshore Library Database";
@@ -376,7 +389,6 @@
             this.ResultTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ResultPicture)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -408,6 +420,7 @@
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

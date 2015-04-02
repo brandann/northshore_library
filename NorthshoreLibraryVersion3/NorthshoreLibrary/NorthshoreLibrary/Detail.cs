@@ -8,6 +8,8 @@ namespace NorthshoreLibrary
 {
     public class Detail : DatabaseItem
     {
+        public const string TAG_SPLIT_TOKEN = ">>";
+
         private enum DETAIL_TOKEN{ID = 0, COMPANY = 1, JOB_NAME = 2, JOB_NUMBER = 3, SEARCHABLE = 4, DATE = 5, DESCRIPTION = 6, PDF = 7, DWG = 8, JPG = 9, TAGS = 10}
         private const char DETAIL_SPLIT = '$';
         //private const char[] TAG_SPLIT = { '>', '>' };
@@ -50,6 +52,21 @@ namespace NorthshoreLibrary
             _jpg = "";
             _tags = "";
             _isDirty = false;
+        }
+
+        public override string ToString()
+        {
+            return _id.ToUpper() + DETAIL_SPLIT
+            + _company.ToUpper() + DETAIL_SPLIT
+            + _name.ToUpper() + DETAIL_SPLIT
+            + _number.ToUpper() + DETAIL_SPLIT
+            + _searchable.ToUpper() + DETAIL_SPLIT
+            + _date.ToUpper() + DETAIL_SPLIT
+            + _description.ToUpper() + DETAIL_SPLIT
+            + _pdf + DETAIL_SPLIT
+            + _dwg + DETAIL_SPLIT
+            + _jpg + DETAIL_SPLIT
+            + _tags.ToUpper();
         }
 
         public override string GetString()
