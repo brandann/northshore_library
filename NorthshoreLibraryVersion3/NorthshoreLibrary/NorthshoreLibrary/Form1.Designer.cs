@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.SearchTerm2 = new System.Windows.Forms.ComboBox();
             this.SearchTerm1 = new System.Windows.Forms.ComboBox();
             this.Tabs = new System.Windows.Forms.TabControl();
             this.SearchTab = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -48,7 +50,7 @@
             this.ResultEdit = new System.Windows.Forms.Button();
             this.ResultAutocad = new System.Windows.Forms.Button();
             this.ResultPDF = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.editdetailbtn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.AddDetailButton = new System.Windows.Forms.Button();
             this.SearchRemoveButton = new System.Windows.Forms.Button();
@@ -99,6 +101,7 @@
             // SearchTab
             // 
             this.SearchTab.BackColor = System.Drawing.SystemColors.Control;
+            this.SearchTab.Controls.Add(this.editdetailbtn);
             this.SearchTab.Controls.Add(this.label3);
             this.SearchTab.Controls.Add(this.button1);
             this.SearchTab.Controls.Add(this.checkBox3);
@@ -122,6 +125,17 @@
             this.SearchTab.Size = new System.Drawing.Size(813, 590);
             this.SearchTab.TabIndex = 0;
             this.SearchTab.Text = "Search";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(193, 6);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(390, 31);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Northshore Library Database";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // checkBox3
             // 
@@ -197,6 +211,7 @@
             // 
             // SearchResultList
             // 
+            this.SearchResultList.BackColor = System.Drawing.SystemColors.Control;
             this.SearchResultList.FormattingEnabled = true;
             this.SearchResultList.Location = new System.Drawing.Point(26, 103);
             this.SearchResultList.Name = "SearchResultList";
@@ -259,6 +274,7 @@
             this.ResultList.Size = new System.Drawing.Size(321, 550);
             this.ResultList.TabIndex = 8;
             this.ResultList.SelectedIndexChanged += new System.EventHandler(this.ResultList_SelectedIndexChanged);
+            this.ResultList.DoubleClick += new System.EventHandler(this.ResultList_DoubleClick);
             // 
             // ResultEdit
             // 
@@ -290,16 +306,18 @@
             this.ResultPDF.UseVisualStyleBackColor = true;
             this.ResultPDF.Click += new System.EventHandler(this.ResultPDF_Click);
             // 
-            // label3
+            // editdetailbtn
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(193, 6);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(390, 31);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Northshore Library Database";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.editdetailbtn.Image = global::NorthshoreLibrary.Properties.Resources.dark_pencil;
+            this.editdetailbtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.editdetailbtn.Location = new System.Drawing.Point(721, 174);
+            this.editdetailbtn.Name = "editdetailbtn";
+            this.editdetailbtn.Size = new System.Drawing.Size(84, 50);
+            this.editdetailbtn.TabIndex = 21;
+            this.editdetailbtn.Text = "Edit Detail";
+            this.editdetailbtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.editdetailbtn.UseVisualStyleBackColor = true;
+            this.editdetailbtn.Click += new System.EventHandler(this.editdetailbtn_Click);
             // 
             // button1
             // 
@@ -317,7 +335,7 @@
             // 
             this.AddDetailButton.Image = global::NorthshoreLibrary.Properties.Resources.dark_list___add;
             this.AddDetailButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.AddDetailButton.Location = new System.Drawing.Point(721, 6);
+            this.AddDetailButton.Location = new System.Drawing.Point(721, 62);
             this.AddDetailButton.Name = "AddDetailButton";
             this.AddDetailButton.Size = new System.Drawing.Size(84, 50);
             this.AddDetailButton.TabIndex = 16;
@@ -343,7 +361,7 @@
             // 
             this.SearchSearchButton.Image = global::NorthshoreLibrary.Properties.Resources.dark_search;
             this.SearchSearchButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.SearchSearchButton.Location = new System.Drawing.Point(721, 62);
+            this.SearchSearchButton.Location = new System.Drawing.Point(721, 6);
             this.SearchSearchButton.Name = "SearchSearchButton";
             this.SearchSearchButton.Size = new System.Drawing.Size(84, 50);
             this.SearchSearchButton.TabIndex = 9;
@@ -378,9 +396,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(821, 616);
             this.Controls.Add(this.Tabs);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Northshore Library Database";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Tabs.ResumeLayout(false);
@@ -421,6 +443,7 @@
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button editdetailbtn;
     }
 }
 

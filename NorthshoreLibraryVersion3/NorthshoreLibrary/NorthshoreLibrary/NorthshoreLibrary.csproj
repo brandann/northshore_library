@@ -86,6 +86,12 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
     <Compile Include="KeyGen.cs" />
     <Compile Include="LibraryManager.cs" />
     <Compile Include="Program.cs" />
@@ -103,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -164,6 +173,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LibraryIcon2ICO.ico" />
+    <None Include="Resources\dark_pencil.png" />
     <None Include="Resources\light_comment%402x.png" />
     <None Include="Resources\dark_warn.png" />
     <None Include="Resources\dark_x.png" />

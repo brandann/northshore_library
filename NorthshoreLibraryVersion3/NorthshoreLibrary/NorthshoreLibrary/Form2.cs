@@ -89,6 +89,8 @@ namespace NorthshoreLibrary
                 }
             }
 
+            ((Form1)_mainForm).ReloadForm();
+
             if (found)
             {
                 _libraryManager.Replace(det);
@@ -103,7 +105,6 @@ namespace NorthshoreLibrary
                 compcmb.SelectedItem = det.Company.ToUpper();
                 selectedtagslist.Items.Clear();
             }
-            
         }
 
         private void SetCategory()
@@ -287,7 +288,12 @@ namespace NorthshoreLibrary
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
         {
+            
+        }
 
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(Directory.Location + "files\\help.htm");
         }
     }
 }

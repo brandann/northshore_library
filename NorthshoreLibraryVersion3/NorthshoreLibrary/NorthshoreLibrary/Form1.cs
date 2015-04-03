@@ -55,6 +55,8 @@ namespace NorthshoreLibrary
             SearchResultLabel.Text = _libraryManager.Details.GetCount() + RESULT_LABEL;
 
             Tabs.SelectedIndex = 0;
+
+            ResetResults();
         }
 
         private void SearchTerm1_SelectedIndexChanged(object sender, EventArgs e)
@@ -250,12 +252,7 @@ namespace NorthshoreLibrary
 
         private void ResultEdit_Click(object sender, EventArgs e)
         {
-            if(ResultList.SelectedIndex != -1)
-            {
-                Form2 form = new Form2();
-                form.Show();
-                form.SetLibrary(this, _libraryManager, _details[ResultList.SelectedIndex]);
-            }
+            EditDetail();
         }
 
         private void AddDetailButton_Click(object sender, EventArgs e)
@@ -349,6 +346,31 @@ namespace NorthshoreLibrary
                 SearchTermList.Items.RemoveAt(0);
             }
             Search();
+        }
+
+        private void ResultList_DoubleClick(object sender, EventArgs e)
+        {
+            EditDetail();
+        }
+
+        private void EditDetail()
+        {
+            if (ResultList.SelectedIndex != -1)
+            {
+                Form2 form = new Form2();
+                form.Show();
+                form.SetLibrary(this, _libraryManager, _details[ResultList.SelectedIndex]);
+            }
+        }
+
+        private void editdetailbtn_Click(object sender, EventArgs e)
+        {
+            OpenDetailByID();
+        }
+
+        private void OpenDetailByID()
+        {
+            new Form3(this, _libraryManager).Show();
         }
     }
 }

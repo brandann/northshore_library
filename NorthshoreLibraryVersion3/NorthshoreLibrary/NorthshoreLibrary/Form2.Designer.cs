@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.label1 = new System.Windows.Forms.Label();
             this.idtxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -58,6 +59,7 @@
             this.compcmb = new System.Windows.Forms.ComboBox();
             this.catcmb = new System.Windows.Forms.ComboBox();
             this.includebool = new System.Windows.Forms.CheckBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.detailpicture = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.detailpicture)).BeginInit();
             this.SuspendLayout();
@@ -65,7 +67,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(477, 12);
+            this.label1.Location = new System.Drawing.Point(477, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(18, 13);
             this.label1.TabIndex = 1;
@@ -74,7 +76,7 @@
             // idtxt
             // 
             this.idtxt.Enabled = false;
-            this.idtxt.Location = new System.Drawing.Point(574, 5);
+            this.idtxt.Location = new System.Drawing.Point(574, 31);
             this.idtxt.Name = "idtxt";
             this.idtxt.Size = new System.Drawing.Size(374, 20);
             this.idtxt.TabIndex = 2;
@@ -82,7 +84,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(477, 38);
+            this.label2.Location = new System.Drawing.Point(477, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 13);
             this.label2.TabIndex = 3;
@@ -90,7 +92,7 @@
             // 
             // nametxt
             // 
-            this.nametxt.Location = new System.Drawing.Point(574, 57);
+            this.nametxt.Location = new System.Drawing.Point(574, 83);
             this.nametxt.Name = "nametxt";
             this.nametxt.Size = new System.Drawing.Size(374, 20);
             this.nametxt.TabIndex = 6;
@@ -98,7 +100,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(477, 64);
+            this.label3.Location = new System.Drawing.Point(477, 90);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 13);
             this.label3.TabIndex = 5;
@@ -106,7 +108,7 @@
             // 
             // numbertxt
             // 
-            this.numbertxt.Location = new System.Drawing.Point(574, 83);
+            this.numbertxt.Location = new System.Drawing.Point(574, 109);
             this.numbertxt.Name = "numbertxt";
             this.numbertxt.Size = new System.Drawing.Size(374, 20);
             this.numbertxt.TabIndex = 8;
@@ -114,7 +116,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(477, 90);
+            this.label4.Location = new System.Drawing.Point(477, 116);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 13);
             this.label4.TabIndex = 7;
@@ -123,7 +125,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(477, 116);
+            this.label5.Location = new System.Drawing.Point(477, 142);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(91, 13);
             this.label5.TabIndex = 9;
@@ -132,19 +134,21 @@
             // datetxt
             // 
             this.datetxt.Enabled = false;
-            this.datetxt.Location = new System.Drawing.Point(574, 135);
+            this.datetxt.Location = new System.Drawing.Point(574, 264);
             this.datetxt.Name = "datetxt";
             this.datetxt.Size = new System.Drawing.Size(374, 20);
             this.datetxt.TabIndex = 12;
+            this.datetxt.Visible = false;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(477, 142);
+            this.label6.Location = new System.Drawing.Point(477, 271);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(30, 13);
             this.label6.TabIndex = 11;
             this.label6.Text = "Date";
+            this.label6.Visible = false;
             // 
             // descriptiontxt
             // 
@@ -304,7 +308,7 @@
             "STANDARD",
             "NORTHSHORE",
             "NORTHCLAD"});
-            this.compcmb.Location = new System.Drawing.Point(574, 30);
+            this.compcmb.Location = new System.Drawing.Point(574, 56);
             this.compcmb.Name = "compcmb";
             this.compcmb.Size = new System.Drawing.Size(374, 21);
             this.compcmb.TabIndex = 33;
@@ -324,12 +328,23 @@
             this.includebool.AutoSize = true;
             this.includebool.Checked = true;
             this.includebool.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.includebool.Location = new System.Drawing.Point(574, 112);
+            this.includebool.Location = new System.Drawing.Point(574, 138);
             this.includebool.Name = "includebool";
             this.includebool.Size = new System.Drawing.Size(61, 17);
             this.includebool.TabIndex = 35;
             this.includebool.Text = "Include";
             this.includebool.UseVisualStyleBackColor = true;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(571, 9);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(29, 13);
+            this.linkLabel1.TabIndex = 37;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Help";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // detailpicture
             // 
@@ -344,7 +359,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(960, 653);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.includebool);
             this.Controls.Add(this.catcmb);
             this.Controls.Add(this.compcmb);
@@ -376,8 +393,11 @@
             this.Controls.Add(this.idtxt);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.detailpicture);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Edit Detial";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.detailpicture)).EndInit();
             this.ResumeLayout(false);
@@ -418,5 +438,6 @@
         private System.Windows.Forms.ComboBox compcmb;
         private System.Windows.Forms.ComboBox catcmb;
         private System.Windows.Forms.CheckBox includebool;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
